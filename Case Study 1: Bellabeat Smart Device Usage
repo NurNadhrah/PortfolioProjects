@@ -1,1 +1,13 @@
+-- This SQL code was run in BigQuery
 
+-- Determine how many users use daily activity features
+SELECT COUNT(DISTINCT Id)
+FROM `bellabeat-case-study-426114.Bellabeat.daily_activity_users_freq`
+
+-- Determine how many users use sleep monitoring features
+SELECT COUNT(DISTINCT Id)
+FROM `bellabeat-case-study-426114.Bellabeat.sleep_users_freq`
+
+-- Determine how many users use weight and BMI features
+SELECT COUNT(DISTINCT Id)
+FROM `bellabeat-case-study-426114.Bellabeat.weight_log_info`
